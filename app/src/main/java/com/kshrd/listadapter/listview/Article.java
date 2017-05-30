@@ -8,6 +8,24 @@ public class Article {
 
     private int id;
     private String title;
+    private String date;
+    private String viewnumber;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getViewnumber() {
+        return viewnumber;
+    }
+
+    public void setViewnumber(String viewnumber) {
+        this.viewnumber = viewnumber;
+    }
 
     public Article(int id, String title) {
         this.id = id;

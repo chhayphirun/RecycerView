@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ListAdapter.iml" filepath="$PROJECT_DIR$/ListAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecycerView.iml" filepath="$PROJECT_DIR$/RecycerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
