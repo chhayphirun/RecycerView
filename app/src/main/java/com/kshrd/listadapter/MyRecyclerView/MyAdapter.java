@@ -1,7 +1,6 @@
 package com.kshrd.listadapter.MyRecyclerView;
 
 import android.content.Context;
-import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.kshrd.listadapter.R;
-import com.kshrd.listadapter.listview.Article;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -43,13 +41,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 .placeholder(R.drawable.ic_android)
                 .error(R.drawable.ic_android)
                 .into(holder.ivthumnail);
-        holder.date.setText(article1.getPostDate()+" Views");
-        holder.viewnumber.setText(String.valueOf(article1.getView()));
+        holder.date.setText(article1.getPostDate()+"");
+        holder.viewnumber.setText(String.valueOf(article1.getView())+" Views");
         Picasso.with(context)
                 .load(article1.getImageUrl())
                 .placeholder(R.drawable.ic_android)
                 .error(R.drawable.ic_android)
-                .into(holder.imageView6);
+                .into(holder.imageView7);
 
     }
 
@@ -64,6 +62,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         TextView date;
         TextView viewnumber;
         ImageView imageView6;
+        ImageView imageView7;
 
 
         public MyViewHolder(View itemView) {
@@ -73,6 +72,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             date= (TextView) itemView.findViewById(R.id.tvDate);
             viewnumber= (TextView) itemView.findViewById(R.id.tvviewnumber);
             imageView6= (ImageView) itemView.findViewById(R.id.imageView6);
+            imageView7= (ImageView) itemView.findViewById(R.id.imageView7);
         }
     }
 }
